@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.gaurav.androidpower.PhoneActivity"
+    tools:showIn="@layout/activity_phone">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="Your Phone Number"
+        android:id="@+id/myPhoneTextView"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/myPhoneEditText"
+        android:layout_below="@+id/myPhoneTextView"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/myEmergencyTextView"
+        android:layout_below="@+id/myPhoneEditText"
+        android:text="Emergency Contacts"
+        android:textSize="30dp"
+        android:inputType="textNoSuggestions"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/contactOneEditText"
+        android:inputType="textNoSuggestions"
+        android:layout_below="@+id/myEmergencyTextView"
+        android:hint="First Contact"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/contactTwoEditText"
+        android:inputType="textNoSuggestions"
+        android:hint="Second Contact"
+        android:layout_below="@+id/contactOneEditText"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/contactThreeEditText"
+        android:hint="Third Contact"
+        android:inputType="textNoSuggestions"
+        android:layout_below="@+id/contactTwoEditText"/>
+
+
+</RelativeLayout>
